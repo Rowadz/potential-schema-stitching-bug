@@ -21,6 +21,8 @@ query users {
 }
 ```
 
+<img src="./logs.png" />
+
 `launch.json` file if you use vscode
 
 ```json

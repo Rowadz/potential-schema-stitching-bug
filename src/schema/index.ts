@@ -59,6 +59,8 @@ export const schema = createSchema<GraphQLContext>({
         { loaders: { userLoader } },
         info
       ) => {
+        // 🟣 this should print the alias used in the query, but after calling stitchSchemas
+        // 🟣 this will print the field name
         console.log({ key: info.path.key })
         return userLoader.load(user.id + 1)
       },
@@ -84,6 +86,8 @@ export const schema = createSchema<GraphQLContext>({
         { loaders: { userLoader } },
         info
       ) => {
+        // 🟣 this should print the alias used in the query, but after calling stitchSchemas
+        // 🟣 this will print the field name
         console.log({ key: info.path.key })
         return userLoader.load(id)
       },

@@ -12,3 +12,25 @@ query users {
   }
 }
 ```
+
+`launch.json` file if you use vscode
+
+```json
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Run server",
+      "program": "${workspaceFolder}/node_modules/nodemon/bin/nodemon",
+      "args": ["src/index.ts"],
+      "env": {
+        "TRANSPILE_ONLY": "1"
+      },
+      "internalConsoleOptions": "openOnSessionStart",
+      "skipFiles": ["<node_internals>/**"]
+    }
+  ]
+}
+```

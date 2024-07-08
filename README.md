@@ -1,3 +1,11 @@
+```bash
+$ git clone git@github.com:Rowadz/potential-schema-stitching-bug.git
+$ cd potential-schema-stitching-bug
+$ npm i
+# I'm using node 18
+$ npm run dev
+```
+
 When running the following query I would suspect that the `info.path.key` property in each resolver to be `userAlias01` and `userAlias02` but it's not, it's only `user`
 
 ```gql

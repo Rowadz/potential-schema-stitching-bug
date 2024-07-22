@@ -8,6 +8,8 @@ $ npm run dev
 
 When running the following query I would suspect that the `info.path.key` property in each resolver to be `userAlias01` and `userAlias02` but it's not, it's only `user`
 
+> This only happens in the first level resolvers
+
 ```gql
 query users {
   userAlias01: user(id: 1) {

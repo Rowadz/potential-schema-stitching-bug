@@ -1,3 +1,12 @@
+# To fix this!
+
+use `batch: true` even to your main and subschemas (this will give you back aliases but not the one passed from the client)
+
+-> https://github.com/ardatan/graphql-tools/discussions/6329#discussioncomment-10167265
+
+
+----
+
 ```bash
 $ git clone git@github.com:Rowadz/potential-schema-stitching-bug.git
 $ cd potential-schema-stitching-bug
